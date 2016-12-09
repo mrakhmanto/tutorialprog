@@ -1,0 +1,15 @@
+<html>
+<%- include('style')%>
+<%- include('style2')%>
+<title>tutorial programming</title>
+    <body>
+        <br><br><br>
+        <!--buat balikin bentuk JSON-->
+        <!--<% JSON.stringify(articles) %> >>>> articles ini diambil dari res {articles: articles}) >>>yg parameter 1 nya (kiri)-->
+
+        <!--buat nampiln-->
+        <% articles.forEach(function(articles){ %>
+            <li><%= articles.title %>, <%= articles.content %> </li>
+        <% }); %>
+    </body>
+</html>
