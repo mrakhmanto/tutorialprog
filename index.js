@@ -7,8 +7,6 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 app.set('view engine', 'ejs');
 
-//a
-
 //**connect db
 MongoClient.connect('mongodb://mrakhmanto:123456@ds127948.mlab.com:27948/progtutorial', function(err, database){
   if (err) return console.log(err)

@@ -9,7 +9,9 @@
 
         <!--buat nampiln-->
         <% articles.forEach(function(articles){ %>
-            <li><%= articles.title %>, <%= articles.content %> </li>
+            <li><a href="articles"><%= articles.title %></a></li>
+            
+            
         <% }); %>
     </body>
 </html>
